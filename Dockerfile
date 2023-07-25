@@ -3,12 +3,14 @@
 # Based on Debian
 ############################################################
 
+FROM debian
+ARG BUILD_DATE
+
 LABEL maintainer="ken@kennethghartman.com"
 LABEL org.label-schema.build-date=$BUILD_DATE
 LABEL org.label-schema.vcs-url="https://github.com/Resistor52/sleuthkit_container"
 
-# base image
-FROM debian
+
 
 # Update repository sources list
 RUN apt-get update 
