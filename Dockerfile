@@ -4,10 +4,8 @@
 ############################################################
 
 FROM debian
-ARG BUILD_DATE
 
 LABEL maintainer="ken@kennethghartman.com"
-LABEL org.label-schema.build-date=$BUILD_DATE
 LABEL org.label-schema.vcs-url="https://github.com/Resistor52/sleuthkit_container"
 
 
